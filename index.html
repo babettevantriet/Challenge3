@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>MapBox</title><link href="styles/style.css" rel="stylesheet" /><script src="scripts/script.js" defer></script>
+        <script src="https://api.mapbox.com/mapbox-gl-js/v1.9.0/mapbox-gl.js"></script>
+        <link href="https://api.mapbox.com/mapbox-gl-js/v1.9.0/mapbox-gl.css" rel="stylesheet" />
+        <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.2/mapbox-gl-geocoder.min.js"></script>
+        <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.2/mapbox-gl-geocoder.css" />
+	</head>
+	<body>
+        <header>
+            <h1>Landingspagina</h1>
+            <p>Bereken de mogelijkheid om te landen door de naam van de plaats waar u wilt landen in te vullen.</p>
+        </header>
+        <div id="main">
+            <div class="grid-item map" id="map"></div>
+
+            <div class="grid-item temp">
+            	<h2 id="city">Stad</h2>
+            	<p id="weather">Hier komt het weer</p>
+            </div>
+
+            <div class="grid-item news" id="news">
+            	<h2>Foto van de dag</h2>
+            	<figure id="imageOfTheDay"> 
+            		<img src="">
+            		<figcaption></figcaption>
+            	</figure>
+            </div>
+
+            <div class="grid-item land" id="land">
+            	<h2 id="landPosibility">Advies</h2>
+            	<p id="posibility">-</p>
+            </div>
+        </div>
+	</body>
+</html>
