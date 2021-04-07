@@ -37,9 +37,12 @@ function getAPIdata(lon, lat) {
     var weatherBox = document.getElementById('weather');
     weatherBox.innerHTML = (response.main.temp - 273.15).toFixed(1) + ' &#730;C';
     var weather = response.main.temp - 273.15;
+  });
 
-    function advice(){
-	if(weather > 5 && wheater < 30){
+}
+// code voor het advies om wel of niet te landen. Ivm met hitte
+function advice(){
+	if(weather > 5 && weather < 30){
 		document.getElementById('posibility').innerHTML = 'Veilig om te landen';
 		document.getElementById('posibility').style.color = 'green';
 	}
@@ -48,11 +51,6 @@ function getAPIdata(lon, lat) {
 			document.getElementById('posibility').style.color = 'red';
 		}
 }
-  });
-
-}
-// code voor het advies om wel of niet te landen. Ivm met hitte
-
 
 // code voor de foto van de dag
 function getPhotoOfTheDay(){
